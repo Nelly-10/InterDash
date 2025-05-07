@@ -125,9 +125,9 @@ export const useStateContext = () => useContext(StateContext);
 
 // export const useStateContext = () => useContext(StateContext);
 
- 1. create a new repository
- 2. clone the repository
- 3. drag the project folder into the github cloned folder
- 4. Stage all of them
- 5. Commit it.
- 6. Push
+//  1. create a new repository
+//  2. clone the repository
+//  3. drag the project folder into the github cloned folder
+//  4. Stage all of them
+//  5. Commit it.
+//  6. Push
