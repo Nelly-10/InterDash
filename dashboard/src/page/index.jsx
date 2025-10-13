@@ -7,7 +7,7 @@ export { default as Customers } from './Customers';
 export { default as ColorPicker } from './ColorPicker';
 export { default as Calendar } from './Calendar';
 export { default as Area } from './charts/Area';
-export { default as Base } from './charts/Base';
+export { default as Bar } from './charts/Bar';
 export { default as ColorMapping } from './charts/ColorMapping';
 export { default as Financial } from './charts/Financial';
 export { default as Line } from './charts/Line';

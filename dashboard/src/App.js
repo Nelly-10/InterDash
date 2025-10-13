@@ -6,7 +6,7 @@ import { FiSettings } from 'react-icons/fi';
 
 
 import { Navbar, Sidebar, ThemeSettings } from './component';
-import { Ecommerce, Customers, Employee, Order, ColorPicker, Editor, Calendar, Kanban, Base, Area, ColorMapping, Financial, Line, Pie, Pyramid, Stacked } from './page';
+import { Ecommerce, Customers, Employee, Order, ColorPicker, Editor, Calendar, Kanban, Bar, Area, ColorMapping, Financial, Line, Pie, Pyramid, Stacked } from './page';
 
 import { useStateContext } from './contexts/ContextProvider';
 
@@ -65,7 +65,7 @@ const App = () => {
                 {/* Charts */}
                 <Route path="/line" element={<Line />} />
                 <Route path="/area" element={<Area />} />
-                <Route path="/base" element={<Base />} />
+                <Route path="/bar" element={<Bar />} />
                 <Route path="/pie" element={<Pie />} />
                 <Route path="/pyramid" element={<Pyramid />} />
                 <Route path="/financial" element={<Financial />} />

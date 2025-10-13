@@ -51,14 +51,14 @@ const Navbar = () => {
 
   return (
     <div className="flex justify-between p-2 md:mx-6 relative">
-      <NavButton icon={<AiOutlineMenu />} title="Menu" color="blue" customFunc={handleActiveMenu} />
+      <NavButton icon={<AiOutlineMenu />} title="Menu" color={currentColor} customFunc={handleActiveMenu} />
 
       <div className="flex">
-        <NavButton icon={<FiShoppingCart />} title="Menu" color="blue" customFunc={()=> handleClick('cart')} dotColor={currentColor} />
+        <NavButton icon={<FiShoppingCart />} title="Menu" color={currentColor} customFunc={()=> handleClick('cart')} dotColor={currentColor} />
 
-        <NavButton icon={<BsChatLeft />} title="Menu" color="blue" customFunc={()=> handleClick('chat')} dotColor={currentColor} />
+        <NavButton icon={<BsChatLeft />} title="Menu" color={currentColor} customFunc={()=> handleClick('chat')} dotColor={currentColor} />
 
-        <NavButton icon={<RiNotification3Line />} title="Menu" color="blue" customFunc={()=> handleClick('notification')} dotColor={currentColor} />
+        <NavButton icon={<RiNotification3Line />} title="Menu" color={currentColor} customFunc={()=> handleClick('notification')} dotColor={currentColor} />
 
         <TooltipComponent content="Profile" position="BottomCenter">
           <div 

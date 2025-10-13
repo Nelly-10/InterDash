@@ -20,7 +20,7 @@ const Ecommerce = () => {
 
       <div className='flex flex-wrap lg:flex-nowrap justify-center'>
 
-        <div className='bg-white dark:text-gray-200 dark:bg-secondary-dark-bg h-44  rounded-xl w-full lg:w-80 p-8 pt-9 m-3 bg-hero-pattern bg-no-repeat bg-cover bg-center'>
+        <div className='bg-white dark:text-gray-200 dark:bg-secondary-dark-bg h-44 rounded-xl w-full lg:w-80 p-8 pt-9 m-3 bg-hero-pattern bg-no-repeat bg-cover bg-center'>
 
           <div className='flex justify-between items-center'>
             <div>
@@ -32,7 +32,7 @@ const Ecommerce = () => {
           <div className='mt-6'>
             <Button
               color="white"
-              bgColor="blue"
+              bgColor={currentColor}
               text="Download"
               borderRadius="10px"
               size="md"
@@ -123,7 +123,7 @@ const Ecommerce = () => {
             </div>
           </div>
         </div>
-        {/* <div>
+         <div>
           <div
             className=" rounded-2xl md:w-400 p-4 m-3"
             style={{ backgroundColor: currentColor }}
@@ -152,7 +152,7 @@ const Ecommerce = () => {
               <Pie id="pie-chart" data={ecomPieChartData} legendVisiblity={false} height="160px" />
             </div>
           </div>
-        </div> */}
+        </div> 
       </div>
     </div>
   )
