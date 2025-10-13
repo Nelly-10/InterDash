@@ -1,8 +1,14 @@
 import React from 'react'
 
-const Button = () => {
+const Button = ({ bgColor, color, size, text, borderRadius }) => {
   return (
-    <div>button</div>
+    <button
+      type='button'
+      style={{ backgroundColor: bgColor, color, borderRadius }}
+      className={`text-${size} p-3 hover:drop-shadow-xl`}
+    >
+      {text}
+    </button>
   )
 }
 
@@ -15,10 +21,10 @@ export default Button;
 
 
 
-// build up 
+// build up
 // styling
 // file/folder structure
-// settings 
+// settings
 // sidebar
 // navbar
 // back to file/folder structure
