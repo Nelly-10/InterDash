@@ -3,14 +3,21 @@ import { HtmlEditor, Image, Inject, Link, QuickToolbar, RichTextEditorComponent,
 
 import { Header } from '../component';
 import { EditorData } from '../data/dummy';
+import { useStateContext } from '../contexts/ContextProvider';
 
-const Editor = () => (
-  <div className="m-2 md:m-10 mt-24 p-2 md:p-10 bg-white rounded-3xl">
-    <Header category="App" title="Editor" />
-    <RichTextEditorComponent>
-      <EditorData />
-      <Inject services={[HtmlEditor, Toolbar, Image, Link, QuickToolbar]} />
-    </RichTextEditorComponent>
-  </div>
-);
+const Editor = () => {
+  const { currentMode } = useStateContext();
+  return (
+    <div className={`m-2 md:m-10 mt-24 p-2 md:p-10 bg-white rounded-3xl ${currentMode === 'Dark' ? 'dark:bg-secondary-dark-bg text-gray-100' : 'bg-white'
+      }`}>
+      <Header category="App" title="Editor" />
+      <RichTextEditorComponent>
+        <EditorData />
+        <Inject services={[HtmlEditor, Toolbar, Image, Link, QuickToolbar]} />
+      </RichTextEditorComponent>
+    </div>
+  )
+};
+
+
 export default Editor;

@@ -3,11 +3,16 @@ import { GridComponent, ColumnsDirective, ColumnDirective, Resize, Sort, Context
 
 import { ordersData, contextMenuItems, ordersGrid } from '../data/dummy';
 import { Header } from '../component';
+import { useStateContext } from '../contexts/ContextProvider';
 
 const Order = () => {
+  const { currentMode } = useStateContext();
   const editing = { allowDeleting: true, allowEditing: true };
+  
   return (
-    <div className="m-2 md:m-10 mt-24 p-2 md:p-10 bg-white rounded-3xl">
+    <div className={`m-2 md:m-10 mt-24 p-2 md:p-10 rounded-3xl ${
+      currentMode === 'Dark' ? 'dark:bg-secondary-dark-bg text-gray-100' : 'bg-white'
+    }`}>
       <Header category="Page" title="Orders" />
       <GridComponent
         id="gridcomp"
