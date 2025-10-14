@@ -1,6 +1,8 @@
 Project Title
 React Admin Dashboard
 
+https://admin-dasvyh.netlify.app/
+
 A modern, responsive admin dashboard built with React, Tailwind CSS, and Syncfusion components.
 It includes interactive charts, tables, and a fully functional dark/light mode.
 
@@ -35,5 +37,21 @@ React Router
 Author
 
 NELSON
-GitHub
- • LinkedIn
+
+Contributing
+
+Contributions are welcome!
+If you’d like to improve this project:
+
+Fork the repo
+
+Create your feature branch (git checkout -b feature-name)
+
+
+PRO
+
+Commit your changes (git commit -m "Add new feature")
+
+Push to the branch (git push origin feature-name)
+
+Open a Pull Request
