@@ -56,9 +56,9 @@ const Navbar = () => {
       <div className="flex">
         <NavButton icon={<FiShoppingCart />} title="Menu" color={currentColor} customFunc={()=> handleClick('cart')} dotColor={currentColor} />
 
-        <NavButton icon={<BsChatLeft />} title="Menu" color={currentColor} customFunc={()=> handleClick('chat')} dotColor={currentColor} />
+        <NavButton icon={<BsChatLeft />} title="Chat" color={currentColor} customFunc={()=> handleClick('chat')} dotColor={currentColor} />
 
-        <NavButton icon={<RiNotification3Line />} title="Menu" color={currentColor} customFunc={()=> handleClick('notification')} dotColor={currentColor} />
+        <NavButton icon={<RiNotification3Line />} title="Notification" color={currentColor} customFunc={()=> handleClick('notification')} dotColor={currentColor} />
 
         <TooltipComponent content="Profile" position="BottomCenter">
           <div 
